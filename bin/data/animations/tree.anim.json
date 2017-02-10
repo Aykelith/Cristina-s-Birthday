@@ -1,0 +1,6 @@
+{
+    "texture": "dragon.png",
+    "frames": [
+        [0, [0,0,100,100]]
+    ]
+}

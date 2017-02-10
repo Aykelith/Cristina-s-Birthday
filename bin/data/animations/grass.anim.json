@@ -1,0 +1,6 @@
+{
+    "texture": "grass.png",
+    "frames": [
+        [0, [0,0,40,50]]
+    ]
+}

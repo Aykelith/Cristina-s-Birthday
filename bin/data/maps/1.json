@@ -1,0 +1,45 @@
+{
+    "name": "Map Name Here",
+    "ui": "ui-config-file.json",
+
+    "map": {
+        "background": "",
+
+        "intro": {
+
+        },
+        "outro": {
+
+        },
+
+        "enemies": {
+            "types": ["dragon"],
+            "list": [
+                {
+                    "type": "dragon",
+                    "position": 810
+                },
+                {
+                    "type": "dragon",
+                    "position": 970
+                },
+                {
+                    "type": "dragon",
+                    "position": 12500
+                }
+            ]
+        },
+
+        "props": [
+            {
+                "type": "grass",
+                "distance": 90,
+                "stack_size": 3
+            }
+        ]
+    },
+
+    "player": {
+
+    }
+}
