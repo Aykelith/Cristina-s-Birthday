@@ -23,6 +23,7 @@ namespace XAL {
         void setInitialPosition(const sf::Vector2f& pos) { m_sprite.setPosition(pos); }
 
         float position(bool rightPosition = false) const;
+        
 
         void setTexture(const std::shared_ptr<sf::Texture>& texture);
 
@@ -30,12 +31,11 @@ namespace XAL {
 
     protected:
         virtual void draw(sf::RenderTarget& target, sf::RenderStates states) const;
-        virtual void configure(const json& configurationJSON) {}
 
     protected:
         std::shared_ptr<sf::Texture> m_texture = nullptr;
         sf::Sprite m_sprite;
-        Animation *m_animation = nullptr;
+        std::shared_ptr<Animation> m_animation = nullptr;
     };
 }
 

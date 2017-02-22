@@ -9,13 +9,11 @@ namespace XAL {
     Entity::Entity(const json& configurationJSON, Animation& animation)
     : m_animation { &animation }
     {
-        //auto jsonObj = JSONTools::parseJSONFromFile(configurationFile);
 
-        // configure(jsonObj)
     }
 
     float Entity::position(bool rightPosition) const {
-        return (rightPosition) ? m_sprite.getPosition().x + m_sprite.getOrigin().x : m_sprite.getPosition().x;
+        return (rightPosition) ? m_sprite.getPosition().x + m_sprite.getOrigin().x : m_sprite.getPosition().x - m_sprite.getOrigin().x;
     }
 
     void Entity::setTexture(const std::shared_ptr<sf::Texture>& texture) {

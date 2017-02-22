@@ -6,6 +6,7 @@ namespace XAL {
     Enemy::Enemy(const json& configurationJSON, Animation& animation)
     : Entity { configurationJSON, animation }
     {
+        
     }
 
     void Enemy::configure(const json& configurationJSON) {

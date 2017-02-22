@@ -26,6 +26,8 @@ namespace XAL {
 
         float getFloorPosition() const { return m_floor.getPosition().y; }
 
+        void setEnemiesUpdateFunction(const std::function<bool(const Enemy&)>& updateFunction) { m_enemiesManager.setUpdateFunction(updateFunction); }
+
     private:
         static constexpr auto CONFIGURATIONS_FOLDER = "data/entities/";
         static constexpr auto CONFIGURATIONS_EXTENSION = ".json";

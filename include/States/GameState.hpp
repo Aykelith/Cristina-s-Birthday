@@ -6,6 +6,7 @@
 #include <Game/Player.hpp>
 #include <Game/Map.hpp>
 #include <Game/UI.hpp>
+#include <Game/Cinematics.hpp>
 
 #include <SFML/Graphics/View.hpp>
 
@@ -35,8 +36,15 @@ namespace XAL {
             Player m_player;
             UI m_ui;
 
+            Cinematics m_cinematics;
+            bool m_cinematicsRunning = false;
+            bool m_haveOutroCinematics = false;
+            std::string m_outroCinematicsPath = "";
+
             float m_floorPosition;
             float m_gameSpeed = 100.f;
+
+            std::shared_ptr<sf::Font> m_font;
         };
     }
 }

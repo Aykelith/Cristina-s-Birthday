@@ -1,16 +1,10 @@
 {
     "name": "Map Name Here",
     "ui": "ui-config-file.json",
+    "intro_cinematics": "data/cinematics/1.lua",
 
     "map": {
         "background": "",
-
-        "intro": {
-
-        },
-        "outro": {
-
-        },
 
         "enemies": {
             "types": ["dragon"],

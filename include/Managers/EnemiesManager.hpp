@@ -14,11 +14,11 @@ namespace XAL {
     public:
         EnemiesManager(AnimationsManager& animationsManager);
 
-        void setUpdateFunction(const std::function<bool(Enemy&)>& updateFunction) { m_updateFunction = updateFunction; }
+        void setUpdateFunction(const std::function<bool(const Enemy&)>& updateFunction) { m_updateFunction = updateFunction; }
         void update(float dt, float distance);
 
     private:
-        std::function<bool(Enemy&)> m_updateFunction;
+        std::function<bool(const Enemy&)> m_updateFunction;
     };
 }
 

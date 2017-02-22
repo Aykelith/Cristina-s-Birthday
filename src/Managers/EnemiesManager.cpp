@@ -25,7 +25,7 @@ namespace XAL {
 
         for (auto it = m_entities.begin(); it != m_entities.end(); ) {
             it->update(dt, m_gameSpeed);
-            bool needDelete = false; //m_updateFunction(*it);
+            bool needDelete = m_updateFunction(*it);
 
             if (needDelete || it->position(true) < 0) {
                 it = m_entities.erase(it);

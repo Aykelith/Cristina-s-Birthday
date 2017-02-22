@@ -22,6 +22,10 @@ set(SFML_ROOT "E:/Programming/Desktop/Libraries/SFML" "E:/Programming/Desktop/Li
 
 find_package(SFML 2.4.1 REQUIRED system window graphics)
 #find_package(Thor 2)
+
+set(LUA_INCLUDE_DIR "" CACHE PATH "")
+set(LUA_LIBRARY "" CACHE FILEPATH "")
+include_directories(SYSTEM ${LUA_INCLUDE_DIR})
 #####################################################1###########################
 
 set(INCLUDE_PATH "${PROJECT_SOURCE_DIR}/include" "${PROJECT_SOURCE_DIR}/extlibs/headers")
@@ -63,4 +67,5 @@ add_executable(
 
 target_link_libraries(XALGame
 	${SFML_LIBRARIES}
+	${LUA_LIBRARY}
 )
